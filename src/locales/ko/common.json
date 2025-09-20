@@ -1,0 +1,16 @@
+{
+  "header": {
+    "about_us": "회사소개",
+    "business_areas": "사업분야",
+    "sustainability_management": "지속가능경영",
+    "media_center": "미디어 센터",
+    "careers": "채용정보",
+    "customer_support": "고객지원"
+  },
+  "footer": {
+    "site_map": "SITE MAP",
+    "privacy_policy": "개인정보처리방침",
+    "cookie_policy": "쿠키정책",
+    "family_site": "FAMILY SITE"
+  }
+}
