@@ -5,10 +5,10 @@ import { EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import BusinessSectionCard from './BusinessSectionCard';
+import {IBusinessItem} from '@/views/HomePageView/BusinessSection/BusinessSection';
 
 interface Props {
-  data: { title: string; description: string; image: string }[];
-  activeIndex: number;
+  data: IBusinessItem[];
   spaceBetween?: number;
 }
 
@@ -34,7 +34,13 @@ const BusinessCarouselSwiper = ({ data, spaceBetween = 96 }: Props) => {
         <SwiperSlide key={index} style={{ width: 'auto' }} className="py-[40px] sm:py-[64px]">
           {({ isActive }) => (
             <div>
-              <BusinessSectionCard {...item} active={isActive} disableScaleAnimation />
+              <BusinessSectionCard
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                  active={isActive}
+                  disableScaleAnimation
+              />
             </div>
           )}
         </SwiperSlide>

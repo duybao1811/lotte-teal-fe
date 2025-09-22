@@ -37,7 +37,7 @@ const DrawerSubmenu = ({ open, onClose }: Props) => {
                 {item?.subMenu?.map((subItem) => (
                   <Link
                     key={subItem.title}
-                    href={subItem.href || '/'}
+                    href={subItem?.href || '/'}
                     className={'font-bold text-xl text-text-secondary'}
                   >
                     {subItem.title}

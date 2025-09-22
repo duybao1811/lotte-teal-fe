@@ -24,7 +24,13 @@ const BusinessCarouselScroll = dynamic(
   () => import('@/views/HomePageView/BusinessSection/components/BusinessCarouselScroll'),
 );
 
-const mockData = [
+export interface IBusinessItem {
+    title: string;
+    description: string;
+    image: string;
+}
+
+const mockData: IBusinessItem[] = [
   {
     title: '알미늄박',
     description:

@@ -7,7 +7,7 @@ const DropdownColumn = ({
   activeIndex,
   onHover,
 }: {
-  item: { title: string; subMenu: { title: string }[] };
+  item: IMenuItem;
   index: number;
   activeIndex: number;
   onHover: (i: number) => void;
@@ -18,7 +18,7 @@ const DropdownColumn = ({
     })}
     onMouseEnter={() => onHover(index)}
   >
-    {item.subMenu.map((subItem) => (
+    {item?.subMenu?.map((subItem) => (
       <li key={subItem.title} className="py-3 text-base">
         {subItem.title}
       </li>

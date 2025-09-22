@@ -32,7 +32,7 @@ const headerVariants = {
   },
 };
 
-export const data = (t: any) => [
+export const data = (t: (key: string) => string): IMenuItem[] => [
   {
     title: t('about_us'),
     subMenu: [
